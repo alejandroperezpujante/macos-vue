@@ -10,10 +10,14 @@ export default defineNuxtConfig({
 		'@nuxt/icon',
 		'@vueuse/nuxt',
 		'@pinia/nuxt',
+		'radix-vue/nuxt',
 	],
 	icon: {
 		mode: 'svg',
 		attrs: { fill: 'currentColor', style: 'display: inline-block' },
+	},
+	radix: {
+		prefix: 'RV',
 	},
 	eslint: {
 		config: { standalone: false },
