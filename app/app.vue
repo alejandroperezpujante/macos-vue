@@ -1,8 +1,15 @@
 <script setup lang="ts">
-useHeadSafe({
+useHead({
 	title: 'MacOS Vue',
+	meta: [
+		{ name: 'theme-color', content: '#FFFFFF', media: '(prefers-color-scheme: light)' },
+		{ name: 'theme-color', content: '#000000', media: '(prefers-color-scheme: dark)' },
+	],
 	link: [
-		{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+		{ rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+		{ rel: 'icon', href: '/favicon.ico', sizes: '48x48' },
+		{ rel: 'icon', href: '/favicon.svg', sizes: 'any', type: 'image/svg+xml' },
+		{ rel: 'manifest', href: '/site.webmanifest' },
 	],
 })
 </script>
