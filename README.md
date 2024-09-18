@@ -1,75 +1,33 @@
-# Nuxt 3 Minimal Starter
+# MacOS Vue.js
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A recreation of the MacOS desktop using Vue.js.
 
-## Setup
+## Demo
 
-Make sure to install the dependencies:
+You can see a live demo of this project [at this link](https://macos.perezpujantealejandro.dev).
+
+## Development
+
+1. Clone the repository
 
 ```bash
-# npm
-npm install
+git clone https://github.com/alejandroperezpujante/macos-vue.git
+```
 
-# pnpm
-pnpm install
+2. Install dependencies
 
-# yarn
-yarn install
-
-# bun
+```bash
 bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+3. Run the development server
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
 bun run dev
 ```
 
-## Production
+## License
 
-Build the application for production:
+MacOS with Vue.js © 2024 by Alejandro Pérez Pujante is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/ or see the [LICENSE](LICENSE.txt) file.
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+The Apple logo, dock icons, and desktop wallpaper belong to Apple Inc. Apple retains all rights to this media. These elements are not covered by the Creative Commons license and are used here for illustrative purposes only.

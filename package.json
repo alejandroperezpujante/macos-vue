@@ -1,6 +1,14 @@
 {
+	"name": "macos-vue",
 	"type": "module",
 	"private": true,
+	"description": "A recreation of the MacOS desktop using Vue.js.",
+	"author": {
+		"name": "Alejandro Pérez Pujante",
+		"email": "perezpujantealejandro1@gmail.com",
+		"url": "https://perezpujantealejandro.dev"
+	},
+	"license": "SEE LICENSE IN LICENSE.txt",
 	"scripts": {
 		"build": "nuxt build",
 		"dev": "nuxt dev",
