@@ -21,7 +21,7 @@ const BASE_DOCK_ITEMS: DockItem[] = [
 	{ type: 'app', iconPath: `${BASE_ICON_PATH}/app_store.png`, label: 'App Store' },
 	// { type: 'app', iconPath: `${BASE_ICON_PATH}/system_preferences.png`, label: 'System Preferences' },
 	{ type: 'separator' },
-	// { type: 'app', iconPath: `${BASE_ICON_PATH}/trash.png`, label: 'Trash' },
+	{ type: 'app', iconPath: `${BASE_ICON_PATH}/trash.png`, label: 'Trash' },
 ]
 
 export default function () {
