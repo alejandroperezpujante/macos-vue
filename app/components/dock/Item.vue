@@ -6,6 +6,6 @@ defineProps<{ item: AppDockItem }>()
 
 <template>
 	<button type="button" class="dock-item">
-		<NuxtImg :src="item.iconPath" height="48" width="48" />
+		<NuxtImg :src="item.iconPath" height="52" width="52" />
 	</button>
 </template>

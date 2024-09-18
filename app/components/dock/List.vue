@@ -17,6 +17,19 @@ defineProps<{ items: DockItem[] }>()
 .dock-list {
 	display: flex;
 	align-items: center;
-	gap: 1rem;
+	gap: 0.40rem;
+}
+
+li {
+	transition: transform 0.1s ease-in-out;
+}
+li:hover {
+	transform: scale3d(1.3, 1.3, 1.3);
+}
+li:has(+ li:hover) {
+	transform: scale3d(1.1, 1.1, 1.1);
+}
+li:hover + li {
+	transform: scale3d(1.1, 1.1, 1.1);
 }
 </style>
