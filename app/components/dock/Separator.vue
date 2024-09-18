@@ -8,10 +8,10 @@
 
 <style scoped>
 .dock-separator {
-	height: 3.15rem;
-	width: 1px;
-	margin-inline: 1rem;
-	background-color: oklch(80% 0 0);
+	height: 2.5rem;
+	width: 0.75px;
+	margin-inline: 0.5rem;
+	background-color: oklch(35% 0 0);
 	border-radius: 0.25rem;
 }
 </style>

@@ -18,8 +18,8 @@
 	border-radius: 1.25rem;
 	place-content: center;
 
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(25px);
+	backdrop-filter: blur(25px);
 	background-color: oklch(100% 0 0 / 0.1);
 }
 </style>
