@@ -16,7 +16,10 @@ const { floatingStyles, middlewareData } = useFloating(itemRef, tooltipRef, {
 
 <template>
 	<button ref="item" type="button" class="dock-item" @mouseenter="open = true" @mouseleave="open = false">
-		<img :src="item.icon" height="52" width="52" class="dock-item__icon">
+		<picture>
+			<source :srcset="`${item.icon}.avif`" type="image/avif">
+			<img :src="`${item.icon}.webp`" height="52" width="52" class="dock-item__icon">
+		</picture>
 	</button>
 	<div v-if="open" ref="tooltip" :style="floatingStyles" class="dock-tooltip">
 		<span class="dock-tooltip__text">{{ item.label }}</span>

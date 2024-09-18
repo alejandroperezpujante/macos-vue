@@ -1,13 +1,9 @@
 <script setup lang="ts">
-import desktopWallpaper from '~/assets/images/desktop_wallpaper.png'
-
-useHead({
+useHeadSafe({
 	title: 'MacOS Vue',
-	bodyAttrs: {
-		style: {
-			'background-image': `url(${desktopWallpaper})`,
-		},
-	},
+	link: [
+		{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+	],
 })
 </script>
 
@@ -15,29 +11,38 @@ useHead({
 	<MenuBar />
 	<Desktop />
 	<Dock />
+	<picture class="desktop-wallpaper">
+		<source srcset="/images/desktop/wallpaper.avif" type="image/avif">
+		<img src="/images/desktop/wallpaper.webp" alt="MacOS Sonoma art">
+	</picture>
 </template>
 
 <style>
-:root {
-	height: 100dvh;
-	padding: 1rem;
-	background-color: oklch(0% 0 0);
-}
 body {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-
-	border-top-left-radius: 1rem;
-	border-top-right-radius: 1rem;
-
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+  height: 100dvh;
+  padding: 1rem;
+  background-color: oklch(0% 0 0);
 }
 
 #__nuxt {
-	display: contents;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-wallpaper {
+  display: contents;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+		border-top-left-radius: 1.25rem;
+		border-top-right-radius: 1.25rem;
+  }
 }
 </style>

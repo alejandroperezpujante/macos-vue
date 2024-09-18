@@ -10,6 +10,7 @@
 
 <style scoped>
 .dock-container {
+	z-index: 20;
 	height: 4rem;
 	margin-inline: auto;
 	margin-bottom: 0.25rem;
