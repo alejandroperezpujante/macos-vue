@@ -1,6 +1,6 @@
 export interface AppDockItem {
 	type: 'app'
-	iconPath: string
+	icon: string
 	label: string
 }
 

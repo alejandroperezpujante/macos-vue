@@ -1,27 +1,40 @@
+import appStoreIcon from '~/assets/images/dock/app_store.png'
+import contactsIcon from '~/assets/images/dock/contacts.png'
+import facetimeIcon from '~/assets/images/dock/facetime.png'
+import finderIcon from '~/assets/images/dock/finder.png'
+import launchpadIcon from '~/assets/images/dock/launchpad.png'
+import mailIcon from '~/assets/images/dock/mail.png'
+import mapsIcon from '~/assets/images/dock/maps.png'
+import messagesIcon from '~/assets/images/dock/messages.png'
+import musicIcon from '~/assets/images/dock/music.png'
+import notesIcon from '~/assets/images/dock/notes.png'
+import photosIcon from '~/assets/images/dock/photos.png'
+import remindersIcon from '~/assets/images/dock/reminders.png'
+import safariIcon from '~/assets/images/dock/safari.png'
+import trashIcon from '~/assets/images/dock/trash.png'
 import type { DockItem } from '~/types'
 
-const BASE_ICON_PATH = '/images/dock'
 const BASE_DOCK_ITEMS: DockItem[] = [
-	{ type: 'app', iconPath: `${BASE_ICON_PATH}/finder.png`, label: 'Finder' },
-	{ type: 'app', iconPath: `${BASE_ICON_PATH}/launchpad.png`, label: 'Launchpad' },
-	{ type: 'app', iconPath: `${BASE_ICON_PATH}/safari.png`, label: 'Safari' },
-	{ type: 'app', iconPath: `${BASE_ICON_PATH}/messages.png`, label: 'Messages' },
-	{ type: 'app', iconPath: `${BASE_ICON_PATH}/mail.png`, label: 'Mail' },
-	{ type: 'app', iconPath: `${BASE_ICON_PATH}/maps.png`, label: 'Maps' },
-	{ type: 'app', iconPath: `${BASE_ICON_PATH}/photos.png`, label: 'Photos' },
-	{ type: 'app', iconPath: `${BASE_ICON_PATH}/facetime.png`, label: 'FaceTime' },
+	{ type: 'app', icon: finderIcon, label: 'Finder' },
+	{ type: 'app', icon: launchpadIcon, label: 'Launchpad' },
+	{ type: 'app', icon: safariIcon, label: 'Safari' },
+	{ type: 'app', icon: messagesIcon, label: 'Messages' },
+	{ type: 'app', icon: mailIcon, label: 'Mail' },
+	{ type: 'app', icon: mapsIcon, label: 'Maps' },
+	{ type: 'app', icon: photosIcon, label: 'Photos' },
+	{ type: 'app', icon: facetimeIcon, label: 'FaceTime' },
 	// { type: 'app', iconPath: `${BASE_ICON_PATH}/calendar.png`, label: 'Calendar' },
-	{ type: 'app', iconPath: `${BASE_ICON_PATH}/contacts.png`, label: 'Contacts' },
-	{ type: 'app', iconPath: `${BASE_ICON_PATH}/reminders.png`, label: 'Reminders' },
-	{ type: 'app', iconPath: `${BASE_ICON_PATH}/notes.png`, label: 'Notes' },
-	{ type: 'app', iconPath: `${BASE_ICON_PATH}/music.png`, label: 'Music' },
+	{ type: 'app', icon: contactsIcon, label: 'Contacts' },
+	{ type: 'app', icon: remindersIcon, label: 'Reminders' },
+	{ type: 'app', icon: notesIcon, label: 'Notes' },
+	{ type: 'app', icon: musicIcon, label: 'Music' },
 	// { type: 'app', iconPath: `${BASE_ICON_PATH}/keynote.png`, label: 'Keynote' },
 	// { type: 'app', iconPath: `${BASE_ICON_PATH}/numbers.png`, label: 'Numbers' },
 	// { type: 'app', iconPath: `${BASE_ICON_PATH}/pages.png`, label: 'Pages' },
-	{ type: 'app', iconPath: `${BASE_ICON_PATH}/app_store.png`, label: 'App Store' },
+	{ type: 'app', icon: appStoreIcon, label: 'App Store' },
 	// { type: 'app', iconPath: `${BASE_ICON_PATH}/system_preferences.png`, label: 'System Preferences' },
 	{ type: 'separator' },
-	{ type: 'app', iconPath: `${BASE_ICON_PATH}/trash.png`, label: 'Trash' },
+	{ type: 'app', icon: trashIcon, label: 'Trash' },
 ]
 
 export default function () {

@@ -16,7 +16,7 @@ const { floatingStyles, middlewareData } = useFloating(itemRef, tooltipRef, {
 
 <template>
 	<button ref="item" type="button" class="dock-item" @mouseenter="open = true" @mouseleave="open = false">
-		<NuxtImg :src="item.iconPath" height="52" width="52" class="dock-item__icon" />
+		<img :src="item.icon" height="52" width="52" class="dock-item__icon">
 	</button>
 	<div v-if="open" ref="tooltip" :style="floatingStyles" class="dock-tooltip">
 		<span class="dock-tooltip__text">{{ item.label }}</span>

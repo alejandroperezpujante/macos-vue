@@ -1,12 +1,11 @@
 <script setup lang="ts">
-const image = useImage()
-const backgroundImage = `url(${image('/desktop_background.png')})`
+import desktopWallpaper from '~/assets/images/desktop_wallpaper.png'
 
 useHead({
 	title: 'MacOS Vue',
 	bodyAttrs: {
 		style: {
-			'background-image': backgroundImage,
+			'background-image': `url(${desktopWallpaper})`,
 		},
 	},
 })
