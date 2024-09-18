@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { items } = useDockStore()
+const { items } = useDock()
 </script>
 
 <template>

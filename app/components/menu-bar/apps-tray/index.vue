@@ -1,11 +1,11 @@
 <script setup lang="ts">
-const { clock } = storeToRefs(useClockStore())
+const { humanClock } = useClock()
 </script>
 
 <template>
 	<section id="apps-tray">
 		<MenuBarUiItem style="padding-block: 0.25rem; padding-inline: 1rem; border-top-right-radius: 0.75rem">
-			<MenuBarAppsTrayClock :clock />
+			<MenuBarAppsTrayClock :clock="humanClock" />
 		</MenuBarUiItem>
 	</section>
 </template>

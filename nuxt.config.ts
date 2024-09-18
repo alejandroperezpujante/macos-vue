@@ -9,7 +9,6 @@ export default defineNuxtConfig({
 		'@nuxt/image',
 		'@nuxt/icon',
 		'@vueuse/nuxt',
-		'@pinia/nuxt',
 		'radix-vue/nuxt',
 	],
 	icon: {

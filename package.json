@@ -1,31 +1,29 @@
 {
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "lint": "eslint --fix .",
-    "postinstall": "nuxt prepare"
-  },
-  "dependencies": {
-    "@nuxt/eslint": "0.5.7",
-    "nuxt": "3.13.2",
-    "pinia": "2.2.2",
-    "radix-vue": "1.9.5",
-    "vue": "latest",
-    "vue-router": "latest"
-  },
-  "devDependencies": {
-    "@antfu/eslint-config": "3.6.2",
-    "@iconify-json/logos": "1.2.0",
-    "@nuxt/icon": "1.5.1",
-    "@nuxt/image": "1.8.0",
-    "@parcel/watcher": "2.4.1",
-    "@pinia/nuxt": "0.5.4",
-    "@types/node": "20.16.5",
-    "@vueuse/nuxt": "11.1.0",
-    "typescript": "5.5.4"
-  }
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"lint": "eslint --fix .",
+		"postinstall": "nuxt prepare"
+	},
+	"dependencies": {
+		"@nuxt/eslint": "0.5.7",
+		"nuxt": "3.13.2",
+		"radix-vue": "1.9.5",
+		"vue": "latest",
+		"vue-router": "latest"
+	},
+	"devDependencies": {
+		"@antfu/eslint-config": "3.6.2",
+		"@iconify-json/logos": "1.2.0",
+		"@nuxt/icon": "1.5.1",
+		"@nuxt/image": "1.8.0",
+		"@parcel/watcher": "2.4.1",
+		"@types/node": "20.16.5",
+		"@vueuse/nuxt": "11.1.0",
+		"typescript": "5.5.4"
+	}
 }
