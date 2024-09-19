@@ -15,6 +15,7 @@ useHead({
 </script>
 
 <template>
+	<InProgressNotice />
 	<MenuBar />
 	<Desktop />
 	<Dock />
